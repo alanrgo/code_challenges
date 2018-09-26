@@ -1,3 +1,15 @@
+# https://practice.geeksforgeeks.org/problems/pair-with-given-sum-in-a-sorted-array/0
+# You are given an array A of size N. You need to find all pairs in the array that sum to a number K. 
+# If no such pair exists then output will be -1. The elements of the array are distinct and are in sorted order.
+# Note: (a,b) and (b,a) are considered same. Also, an element cannot pair with itself, i.e., (a,a) is invalid.
+#
+# Input:
+# The first line of input is T denoting the number of testcase. T testcases follow. Each testcase contains three lines of input. 
+# The first line is the size of array N. The second line contains N elements separated by spaces. The third line contains the sum K.
+#
+# Output:
+# For each testcase, print all the pairs such that there sum is equal to K.
+
 def binary_search(array, current_left, value):
     r = len(array) -1
     l = current_left
@@ -13,7 +25,6 @@ def binary_search(array, current_left, value):
     return -1
 
 n_tests = input()
-array = [0] * 10000000
 
 for i in range(0, int(n_tests)):
     size = input()
